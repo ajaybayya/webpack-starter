@@ -1,0 +1,35 @@
+{
+  "name": "vendor-projects-template",
+  "version": "0.0.1",
+  "description": "Basic setup to carry out vendor web projects",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "start": "cross-env SERVE=true webpack serve --open",
+    "watch": "webpack --watch",
+    "build": "cross-env NODE_ENV=production webpack",
+    "build:dev": "webpack",
+    "clean": "rm -rf ./dist"
+  },
+  "author": "AJay Bayya",
+  "license": "ISC",
+  "devDependencies": {
+    "clean-webpack-plugin": "^4.0.0-alpha.0",
+    "copy-webpack-plugin": "^9.0.1",
+    "cross-env": "^7.0.3",
+    "css-loader": "^6.2.0",
+    "fork-ts-checker-webpack-plugin": "^6.3.1",
+    "html-webpack-plugin": "^5.3.2",
+    "mini-css-extract-plugin": "^2.2.0",
+    "postcss": "^8.3.6",
+    "postcss-loader": "^6.1.1",
+    "postcss-preset-env": "^6.7.0",
+    "sass": "^1.37.5",
+    "sass-loader": "^12.1.0",
+    "ts-loader": "^9.2.5",
+    "typescript": "^4.3.5",
+    "webpack": "^5.49.0",
+    "webpack-cli": "^4.7.2",
+    "webpack-dev-server": "^3.11.2"
+  }
+}
